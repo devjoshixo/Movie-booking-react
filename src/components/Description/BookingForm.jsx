@@ -31,11 +31,22 @@ const BookingForm = (props) => {
           </div>
           <div className={`${classes.seat} ${classes.inputs}`}>
             <h3 className={classes.heading}>Seats</h3>
-            <input type='number' placeholder='Enter number of seats' />
+            <input type='number' placeholder='Enter number of seats' min={1} />
           </div>
           <div className={`${classes.showdate} ${classes.inputs}`}>
             <h3 className={classes.heading}>Show Date</h3>
             <input type='date' min={dateAvailable} />
+          </div>
+          <div className={`${classes.timeslot} ${classes.inputs}`}>
+            <h3 className={classes.heading}>Time Slot</h3>
+            <select>
+              <option value='' disabled selected hidden>
+                Select a slot
+              </option>
+              <option>10:30am</option>
+              <option>12:30am</option>
+              <option>01:30pm</option>
+            </select>
           </div>
         </form>
       </div>
