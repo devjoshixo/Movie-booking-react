@@ -7,7 +7,7 @@ import HomePage from './Pages/HomePage';
 function App() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route path='/'>
           <HomePage />
