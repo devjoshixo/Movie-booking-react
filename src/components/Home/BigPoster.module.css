@@ -1,0 +1,11 @@
+.poster {
+  width: 100vw;
+  height: 20%;
+  cursor: pointer;
+}
+
+.poster img {
+  width: 100%;
+  height: 20%;
+  object-fit: contain;
+}
