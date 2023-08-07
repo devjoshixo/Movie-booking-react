@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import getMovies from '../../../api/getMovies';
 
 const MovieTile = (props) => {
-  const url = props.movie.show.image?.medium || false;
-  return <div>{url ? <img src={url} /> : ''}</div>;
+  return (
+    <div>
+      <img src={props.movie.show.image.medium} />
+    </div>
+  );
 };
 
 export default MovieTile;

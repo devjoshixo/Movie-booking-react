@@ -4,7 +4,7 @@ import avatar from '../../assets/Netflix-avatar.png';
 
 const Navbar = () => {
   return (
-    <div id='app' className={classes['app']}>
+    <div className={classes['app']}>
       <nav
         className={classes['navbar is-fixed-top']}
         role='navigation'

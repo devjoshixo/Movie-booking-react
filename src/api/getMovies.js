@@ -1,4 +1,4 @@
-const getMovies = async () => {
+const getMovies = async (name = 'all') => {
   var requestOptions = {
     method: 'GET',
     redirect: 'follow',
@@ -6,7 +6,7 @@ const getMovies = async () => {
 
   try {
     const data = await fetch(
-      'https://api.tvmaze.com/search/shows?q=all',
+      `https://api.tvmaze.com/search/shows?q=${name}`,
       requestOptions
     );
     const result = await data.json();
