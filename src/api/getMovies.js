@@ -6,7 +6,7 @@ const getMovies = async (name = 'all') => {
 
   try {
     const data = await fetch(
-      `https://api.tvmaze.com/search/shows?q=${name}`,
+      `https://api.tvmaze.com/search/shows?q=better`,
       requestOptions
     );
     const result = await data.json();
