@@ -1,0 +1,64 @@
+.outer {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.776);
+}
+
+.bookingform {
+  position: fixed;
+  top: 18%;
+  width: 48vw;
+  height: 65vh;
+  border-radius: 18px;
+  background-color: rgb(30, 30, 30);
+  left: 26%;
+}
+
+.bookingform form {
+  position: fixed;
+  top: 25%;
+  left: 43%;
+}
+
+.bookingform input {
+  height: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.bookingform input:placeholder-shown {
+  color: #939399;
+}
+
+.icon {
+  position: fixed;
+  top: 18%;
+  left: 74%;
+  scale: 2;
+}
+
+.name {
+  display: flex;
+  flex-flow: column;
+  gap: 3px;
+}
+
+.name h3 {
+  margin: 0;
+}
+
+.seat {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1rem;
+  gap: 3px;
+}
+
+.seat h3 {
+  margin: 0;
+}

@@ -1,5 +1,5 @@
 .container {
-  margin: 1rem auto 1rem auto;
+  margin: 1rem 2rem 1rem auto;
   display: flex;
   flex-flow: row nowrap;
   gap: 3rem;
@@ -8,12 +8,21 @@
 .poster {
   width: 20rem;
   margin-left: 4rem;
-  background-color: white;
+  object-fit: contain;
+  background-color: black;
+}
+
+.summary {
+  margin-bottom: 0rem;
 }
 
 .name {
   font-size: 2.5rem;
-  margin-bottom: -1rem;
+  margin: -1rem 0 0 0;
+}
+
+.runtime {
+  margin-bottom: 0rem;
 }
 
 .genre {
@@ -21,4 +30,17 @@
   margin-top: -1rem;
   flex-flow: row;
   gap: 0.6rem;
+}
+
+.action {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  border: none;
+}
+.action:hover {
+  background-color: white;
+  color: #52525e;
+  border: 1px solid #52525e;
 }

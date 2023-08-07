@@ -1,11 +1,11 @@
-.app {
+.container {
   width: 100vw;
   height: 2rem;
   background-color: black;
   padding: 2rem 0;
 }
 
-.app img {
+.container img {
   cursor: pointer;
   margin-left: 2rem;
 }
@@ -20,6 +20,12 @@
 p {
   margin-top: 0;
   cursor: pointer;
+}
+.middle-part {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 48rem;
+  justify-content: space-between;
 }
 
 .navbar-menu {
@@ -50,11 +56,4 @@ p {
   height: 3rem;
   margin-right: 0.4rem;
   cursor: pointer;
-}
-
-.middle-part {
-  display: flex;
-  flex-flow: row;
-  gap: 47rem;
-  justify-content: center;
 }

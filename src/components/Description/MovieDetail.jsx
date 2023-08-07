@@ -3,9 +3,11 @@ import getMoviesData from '../../api/getMovieData';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import classes from './MovieDetail.module.css';
 import parse from 'html-react-parser';
+import BookingForm from './BookingForm';
 
 const MovieDetail = () => {
   const [movie, setMovie] = useState(null);
+  const [openForm, setOpenForm] = useState(false);
   const location = useLocation();
   const search = new URLSearchParams(location.search);
 
@@ -17,6 +19,11 @@ const MovieDetail = () => {
     }
     getMovieFromId();
   }, []);
+
+  const onOpenForm = (event) => {
+    event.preventDefault();
+    setOpenForm((prev) => !prev);
+  };
 
   return (
     <>
@@ -31,8 +38,19 @@ const MovieDetail = () => {
                 return <p>{item}</p>;
               })}
             </div>
-            <h2>Summary</h2>
+            <h2 className={classes.runtime}>Runtime</h2>
+            {movie.runtime ? (
+              <p>{movie.runtime} minutes</p>
+            ) : (
+              <p>{movie.averageRuntime} minutes</p>
+            )}
+            {/* {movie.averageRuntime && <p>{movie.averageRuntime} minutes</p>} */}
+            <h2 className={classes.summary}>Summary</h2>
             {parse(movie.summary)}
+            <button className={classes.action} onClick={onOpenForm}>
+              Book Tickets
+            </button>
+            {openForm && <BookingForm onOpenForm={onOpenForm} />}
           </div>
         </div>
       )}
