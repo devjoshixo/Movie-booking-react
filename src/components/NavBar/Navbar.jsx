@@ -1,13 +1,13 @@
 import React from 'react';
-import classes from '../NavBar/NavBar.module.css';
+import classes from '../NavBar/Navbar.module.css';
 import avatar from '../../assets/Netflix-avatar.png';
 
 const Navbar = () => {
   return (
-    <div className={classes.app}>
-      <nav className={classes.navbar}>
-        <div className={classes.container}>
-          <div className={classes.navbrand}>
+    <div className={classes['app']}>
+      <nav className={classes['navbar']}>
+        <div className={classes['container']}>
+          <div className={classes['navbar-brand']}>
             <img
               src='https://cloudinary-res.cloudinary.com/image/upload/v1521663307/MiniFlix-Logo_620x180.png'
               alt='Netflix'
@@ -15,14 +15,14 @@ const Navbar = () => {
               height='28'
             />
           </div>
-          <div className={classes.middlepart}>
-            <div className={classes.navbarmenu}>
+          <div className={classes['middle-part']}>
+            <div className={classes['navbar-menu']}>
               <p>Home</p>
               <p>Series</p>
               <p>Film</p>
               <p>Latest</p>
             </div>
-            <div className={classes.navbarend}>
+            <div className={classes['navbar-end']}>
               <i
                 className='fa-solid fa-magnifying-glass'
                 style={{ color: '#ffffff' }}

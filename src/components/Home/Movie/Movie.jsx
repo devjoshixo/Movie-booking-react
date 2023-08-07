@@ -16,7 +16,7 @@ const Movie = () => {
       {movies &&
         movies.map((movie) => {
           if (!!movie.show.image) {
-            return <MovieTile movie={movie} />;
+            return <MovieTile movie={movie} key={movie.id} />;
           }
         })}
     </div>
