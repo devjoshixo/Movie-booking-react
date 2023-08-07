@@ -20,15 +20,21 @@
 
 .bookingform form {
   position: fixed;
-  top: 25%;
+  top: 22%;
   left: 43%;
 }
 
 .bookingform input {
+  appearance: textfield;
   height: 1.6rem;
   border-radius: 10px;
-  border: none;
+  border: 1px solid transparent;
   padding-left: 10px;
+}
+
+.bookingform input:focus {
+  border: 1px solid rgb(126, 126, 126);
+  outline: none;
 }
 
 .bookingform input:placeholder-shown {
@@ -42,23 +48,17 @@
   scale: 2;
 }
 
-.name {
+.inputs {
   display: flex;
   flex-flow: column;
   gap: 3px;
 }
 
-.name h3 {
-  margin: 0;
+.heading {
+  margin: 1rem 0 0 4px;
 }
 
-.seat {
-  display: flex;
-  flex-flow: column;
-  margin-top: 1rem;
-  gap: 3px;
-}
-
-.seat h3 {
-  margin: 0;
+.showdate input:focus {
+  user-select: none;
+  -webkit-user-select: none;
 }
