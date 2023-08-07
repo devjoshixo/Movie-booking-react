@@ -4,10 +4,10 @@ import avatar from '../../assets/Netflix-avatar.png';
 
 const Navbar = () => {
   return (
-    <div className={classes['app']}>
-      <nav className={classes['navbar']}>
-        <div className={classes['container']}>
-          <div className={classes['navbar-brand']}>
+    <div className={classes.app}>
+      <nav className={classes.navbar}>
+        <div className={classes.container}>
+          <div className={classes.navbrand}>
             <img
               src='https://cloudinary-res.cloudinary.com/image/upload/v1521663307/MiniFlix-Logo_620x180.png'
               alt='Netflix'
@@ -15,14 +15,14 @@ const Navbar = () => {
               height='28'
             />
           </div>
-          <div className={classes['middle-part']}>
-            <div className={classes['navbar-menu']}>
+          <div className={classes.middlepart}>
+            <div className={classes.navbarmenu}>
               <p>Home</p>
               <p>Series</p>
               <p>Film</p>
               <p>Latest</p>
             </div>
-            <div className={classes['navbar-end']}>
+            <div className={classes.navbarend}>
               <i
                 className='fa-solid fa-magnifying-glass'
                 style={{ color: '#ffffff' }}

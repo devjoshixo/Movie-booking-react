@@ -22,19 +22,19 @@ p {
   cursor: pointer;
 }
 
-.navbar-menu {
+.navbarmenu {
   display: flex;
   flex-flow: row;
   gap: 2rem;
   color: white;
 }
 
-.navbar-end {
+.navbarend {
   display: flex;
   gap: 1rem;
 }
 
-.navbar-end i {
+.navbarend i {
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ p {
   cursor: pointer;
 }
 
-.middle-part {
+.middlepart {
   display: flex;
   flex-flow: row;
   gap: 50rem;
