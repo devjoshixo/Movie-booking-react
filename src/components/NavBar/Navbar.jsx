@@ -1,15 +1,11 @@
 import React from 'react';
-import classes from './NavBar.module.css';
+import classes from '../NavBar/NavBar.module.css';
 import avatar from '../../assets/Netflix-avatar.png';
 
 const Navbar = () => {
   return (
     <div className={classes['app']}>
-      <nav
-        className={classes['navbar is-fixed-top']}
-        role='navigation'
-        aria-label='main navigation'
-      >
+      <nav className={classes['navbar']}>
         <div className={classes['container']}>
           <div className={classes['navbar-brand']}>
             <img
