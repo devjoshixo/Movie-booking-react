@@ -1,10 +1,12 @@
 import React from 'react';
 import breakingbad from '../../assets/wallpaperflare.com_wallpaper.jpg';
 import classes from './BigPoster.module.css';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const BigPoster = () => {
+  const location = useHistory();
   const handleClick = () => {
-    console.log('breaking bad');
+    location.push('/details?id=' + 169);
   };
 
   return (

@@ -4,12 +4,11 @@ import './App.css';
 import Navbar from './components/NavBar/Navbar';
 import HomePage from './Pages/HomePage';
 import MoviePage from './Pages/MoviePage';
-import ScrollToTop from './Helper/ScrollToTop';
+import Movie from './components/Home/Movie/Movie';
 
 function App() {
   return (
     <main>
-      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path='/' exact>

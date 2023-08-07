@@ -35,11 +35,13 @@ const Navbar = () => {
               ></i>
               <i className='fa-solid fa-gift' style={{ color: '#ffffff' }}></i>
               <i className='fa-solid fa-bell' style={{ color: '#ffffff' }}></i>
-              <img src={avatar} className={classes.avatar} />
-              <i
-                className='fa-solid fa-caret-down'
-                style={{ color: '#ffffff' }}
-              ></i>
+              <div className={classes.avatar}>
+                <img src={avatar} />
+                <i
+                  className='fa-solid fa-caret-down'
+                  style={{ color: '#ffffff' }}
+                ></i>
+              </div>
             </div>
           </div>
         </div>
