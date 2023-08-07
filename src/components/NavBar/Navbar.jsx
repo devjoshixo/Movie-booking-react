@@ -1,8 +1,13 @@
 import React from 'react';
 import classes from '../NavBar/Navbar.module.css';
 import avatar from '../../assets/Netflix-avatar.png';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Navbar = () => {
+  const location = useHistory();
+  const homeClick = () => {
+    location.push('/');
+  };
   return (
     <div className={classes['app']}>
       <nav className={classes['navbar']}>
@@ -13,11 +18,12 @@ const Navbar = () => {
               alt='Netflix'
               width='112'
               height='28'
+              onClick={homeClick}
             />
           </div>
           <div className={classes['middle-part']}>
             <div className={classes['navbar-menu']}>
-              <p>Home</p>
+              <p onClick={homeClick}>Home</p>
               <p>Series</p>
               <p>Film</p>
               <p>Latest</p>
