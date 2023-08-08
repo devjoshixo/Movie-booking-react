@@ -21,7 +21,7 @@
 .bookingform form {
   position: fixed;
   top: 22%;
-  left: 43%;
+  left: 50%;
 }
 
 .bookingform input {
@@ -43,6 +43,10 @@
   color: #939399;
 }
 
+.details {
+  margin: 4rem 0 1rem 3rem;
+}
+
 .icon {
   position: fixed;
   top: 18%;
@@ -60,6 +64,12 @@
   margin: 1rem 0 0 4px;
 }
 
-.showdate input:focus {
-  user-select: text;
+.timeslot select {
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  height: 1.9rem;
+  background-color: #2b2a33;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding-left: 10px;
 }

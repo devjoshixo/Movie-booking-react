@@ -50,7 +50,9 @@ const MovieDetail = () => {
             <button className={classes.action} onClick={onOpenForm}>
               Book Tickets
             </button>
-            {openForm && <BookingForm onOpenForm={onOpenForm} />}
+            {openForm && (
+              <BookingForm onOpenForm={onOpenForm} name={movie.name} />
+            )}
           </div>
         </div>
       )}
