@@ -14,7 +14,6 @@ const MovieDetail = () => {
   useEffect(() => {
     async function getMovieFromId() {
       const result = await getMoviesData(search.get('id'));
-      console.log(result);
       setMovie(result);
     }
     getMovieFromId();

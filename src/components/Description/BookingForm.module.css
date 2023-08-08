@@ -44,7 +44,7 @@
 }
 
 .details {
-  margin: 4rem 0 1rem 3rem;
+  margin: 2.5rem 0 1rem 3rem;
 }
 
 .icon {
@@ -57,6 +57,7 @@
 .inputs {
   display: flex;
   flex-flow: column;
+  position: relative;
   gap: 3px;
 }
 
@@ -72,4 +73,24 @@
   border-radius: 10px;
   border: 1px solid transparent;
   padding-left: 10px;
+}
+
+.action {
+  margin: 2rem 0rem 0 6rem;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  border: none;
+}
+.action:hover {
+  background-color: white;
+  color: #52525e;
+  border: 1px solid #52525e;
+}
+
+.error {
+  margin: 0 0 -10px 10px;
+  font-size: 13px;
+  color: rgb(255, 91, 91);
 }
